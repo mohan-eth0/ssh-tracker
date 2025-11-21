@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+state.json
+ssh_failed_report.csv
+ssh_failed_report.json
+

@@ -1,0 +1,12 @@
+log_path: /var/log/auth.log
+use_journalctl: false
+threshold: 5                 # number of failures to consider as an alert
+time_window_minutes: 60      # window to count failures
+report_json: ssh_failed_report.json
+report_csv: ssh_failed_report.csv
+webhook_url: ""              # put your Slack/Discord webhook here
+block_with_iptables: false   # set true if you want automatic iptables blocking
+state_file: state.json
+block_comment: "Blocked by ssh_bruteforce_detector"
+dry_run: true                # set false to actually execute iptables commands
+
